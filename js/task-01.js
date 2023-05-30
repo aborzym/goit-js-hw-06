@@ -1,13 +1,9 @@
 "use strict";
 
 const lists = document.querySelectorAll(".item");
-console.log(lists);
-
-const categories = document.querySelectorAll("h2");
-console.log(categories);
-
 console.log(`Number of categories: ${lists.length}`);
 
-console.log(categories[0].textContent);
-
-console.log;
+lists.forEach((list) => {
+  console.log(`Category: ${list.querySelector("h2").textContent}`);
+  console.log(`Elements: ${list.querySelectorAll("li").length}`);
+});
