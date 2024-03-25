@@ -25,7 +25,6 @@ const createSingleGalleryItem = (image) => {
 //2. łączy je w jeden string
 
 const gallery = images.map(createSingleGalleryItem).join("");
-console.log(images.map(createSingleGalleryItem));
 
 //wrzucić wszystko do gallery jedną operacją
 galleryList.insertAdjacentHTML("afterbegin", gallery);
